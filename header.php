@@ -4,15 +4,11 @@
 <head>
     <meta charset="<?php echo bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="">
+    <meta name="description" content="<?= bloginfo('description'); ?>">
     <meta name="author" content="">
     <meta name="keywords" content="MediaCenter, Template, eCommerce">
-    <meta name="robots" content="all">    
-    <!-- Bootstrap Core CSS -->    
-
-    <!-- Icons/Glyphs -->
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
-
+    <meta name="robots" content="all">
+    
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
@@ -42,7 +38,9 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-10 logo-holder">
                         <div class="logo">
-                            <a href="home.html"> <img src="assets/images/logo.png" alt="logo"> </a>
+                            <a href="/"> 
+                            <?php the_custom_logo(); ?>    
+                        </a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-2 animate-dropdown top-cart-row">
