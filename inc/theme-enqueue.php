@@ -13,6 +13,7 @@ if(!function_exists('ecom_enqueue_styles')){
         wp_enqueue_style('animate-min-css', get_template_directory_uri() . '/assets/css/animate.min.css', array(), '1.0.1','all');
         wp_enqueue_style('rateit', get_template_directory_uri() . '/assets/css/rateit.css', array(), '1.0.1','all');
         wp_enqueue_style('bootstrap-select', get_template_directory_uri() . '/assets/css/bootstrap-select.min.css', array(), '1.0.1','all');
+        wp_enqueue_style('font-awesome-icons', get_template_directory_uri() . '/assets/css/font-awesome.css', array(), '1.0.1','all');
     }
 }
 

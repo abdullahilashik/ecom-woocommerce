@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes() ?>>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php echo bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="MediaCenter, Template, eCommerce">
-    <meta name="robots" content="all">
-    <title>eCommerce premium HTML5 & CSS3 Template</title>
+    <meta name="robots" content="all">    
     <!-- Bootstrap Core CSS -->    
 
     <!-- Icons/Glyphs -->
@@ -21,7 +20,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="cnt-home">
+<body class="cnt-home <?= implode(' ',get_body_class()); ?>" >
     <header class="header-style-1">
         <div class="top-bar animate-dropdown">
             <div class="container">
